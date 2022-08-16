@@ -18,10 +18,10 @@ header {
     right: 0px;
     left: 0px;
     min-height: 100px;
-    width: 20%;
+    width: 10%;
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 5px;
 }
 
 nav {
@@ -39,6 +39,8 @@ nav {
     align-self: flex-start;
     width: 100%;
     filter: drop-shadow(2px 4px 6px #a35791);
+    padding-left: 5px;
+    padding-bottom: 25px;
 }
 
 
@@ -49,24 +51,25 @@ nav {
     height: 100%;
     margin-left: 0px;
     margin-right: 0px;
-    z-index: -4;
+    z-index: 4;
 }
 
 video {
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
     bottom: 0;
     filter: hue-rotate(245deg);
-    width: 100%;
-   
-    
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
 }
 
 .foto_principal {
     border-radius: 30px;
     filter: opacity(0.6);
-    width: 120px;
+    
     height: 150px;
 }
 
@@ -83,10 +86,20 @@ padding-bottom: 10px;
 
 .main_estudios {
     margin-left: 160px;
-    width: 70%;
-    margin-top: 20px;
+    width: 80%;
+    margin-top: 0px;
 }
 
+.btn-primary {
+    background-color: #7e5185;
+    color: #fdf3fa;
+    border: #7e5185;
+}
+
+.btn:active {
+    
+}
+    
 
 .body_contacto {
     display: flex;
@@ -101,12 +114,14 @@ padding-bottom: 10px;
 
 .main_contacto {
     align-self: center;
-    width: 50%;
+    width: 70%;
+    margin-top: 0px;
 }
 
 .card_datospersonales_contacto {
     background-color: #7e5185;
     color: cornsilk;
+    margin-bottom: 20px;
 }
 
 .accordion-item {
@@ -115,8 +130,21 @@ padding-bottom: 10px;
 
 .accordion-button {
     background-color: #d7a8cb;
+    color: #fdf3fa;
 }
 
-.datos_contacto {
-    margin-left: 30px;
+.accordion-collapse {
+ background-color: #a35791;
+}
+
+.titulo_habilidades_contacto {
+    background-color: #7e5185;
+    color: #d7a8cb;
+}
+
+.list-group-item {
+    background-color: #d7a8cb;
+    color: #fdf3fa;
+    padding: 7px;
+    padding-left: 15px;
 }
